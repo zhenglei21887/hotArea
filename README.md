@@ -2,9 +2,10 @@ jquery.hotArea.js
 ====================
 
 HotArea is a jQuery plugin that gives you the ability to Select multiple areas from an image(any $container in fact) and set links for them.
+
 based on jquery.areaSelect.js（https://github.com/gongshw/jquery.areaSelect.js）
 
-view demo: 
+view demo: http://www.dabao.space/plugin/hotArea/demo.html
 
 Init
 ====
@@ -49,7 +50,10 @@ $container.hotArea('fromTag');
 Notice
 =====
 
-- 1.mousedown to kick off, mouseup to stop
-- 2.click an edit box to add an link
-- 3.mouseover to view the link you added
-- 4.double click to delete an edit box
+1.mousedown to kick off, mouseup to stop
+
+2.click an edit box to add an link
+
+3.mouseover to view the link you added
+
+4.double click to delete an edit box
