@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>demo</title>
+	<style>
+		#canvas {width: 750px;border: 2px solid lightgray;position: relative;}
+		#canvas img {max-width: 100%;vertical-align: bottom;}
+		#previewContainer {width: 750px;}
+		.left {display: inline-block;float: left;}
+		.right {display: inline-block;float: right;}
+	</style>
+</head>
+<body>
+	<header>
+		<button id="upload">Upload</button>
+		<button id="preview">Preview</button>
+		<h4 style="color:red;">double click to delete an hot area</h4>
+	</header>
+	<div style="width: 1600px;">
+		<div id="canvas" class="left">
+			<img src="img/bathroom.png">
+		</div>
+		<div id="previewContainer" class="right"></div>
+	</div>
+</body>
+</html>
+
+<script src="lib/jquery-1.9.1.js"></script>
+<script src="lib/jquery.hotArea.js"></script>
+<script>
+	$(function () {
+		$("#canvas").hotArea();
+		$('#preview').click(function () {$('#previewContainer').html($("#canvas").hotArea('toTag'))});
+		$('#upload').click(function () {
+			$('<img src="img/discription.png">').appendTo('#canvas');
+			$("#canvas").hotArea("resizeCanvas");
+		});
+	});
+</script>
