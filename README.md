@@ -49,7 +49,7 @@ $container.hotArea('fromTag');
 Notice
 =====
 
-1.mousedown to kick off, mouseup to stop
-2.click an edit box to add an link
-3.mouseover to view the link you added
-4.double click to delete an edit box
+- 1.mousedown to kick off, mouseup to stop
+- 2.click an edit box to add an link
+- 3.mouseover to view the link you added
+- 4.double click to delete an edit box
