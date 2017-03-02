@@ -1,7 +1,7 @@
 jquery.hotArea.js
 ====================
 
-HotArea is a jQuery plugin that gives you the ability to Select multiple areas from an image(any $container in fact) and set links for them.
+HotArea is a jQuery plugin that gives you the ability to Select multiple areas from an image(any $container in fact) and set links for them. If not works well, try the update to date Chrome.
 
 based on jquery.areaSelect.js（https://github.com/gongshw/jquery.areaSelect.js）
 
