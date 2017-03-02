@@ -30,7 +30,7 @@
 <script src="lib/jquery.hotArea.js"></script>
 <script>
 	$(function () {
-		$("#canvas").hotArea();
+		$("img").on("load", function() {$("#canvas").hotArea();});
 		$('#preview').click(function () {$('#previewContainer').html($("#canvas").hotArea('toTag'))});
 		$('#upload').click(function () {
 			$('<img src="img/discription.png">').appendTo('#canvas');
