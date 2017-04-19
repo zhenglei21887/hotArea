@@ -5,7 +5,7 @@ HotArea is a jQuery plugin that gives you the ability to Select multiple areas f
 
 based on jquery.areaSelect.js（https://github.com/gongshw/jquery.areaSelect.js）
 
-view demo: http://www.dabao.space/plugin/hotArea/demo.html
+view demo: https://zhenglei21887.github.io/plugin/hotArea/demo.html
 
 Init
 ====
