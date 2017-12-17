@@ -36,10 +36,13 @@
 		{"x":17,"y":493,"width":350,"height":394,"url":"//m.51tiangou.com"},
 		{"x":377,"y":495,"width":351,"height":396,"url":"//taobao.com"}];
 	$(function () {
-		$("img").on("load", function() {$("#canvas").hotArea({initAreas: initAreas});});
-		$('#preview').click(function () {$('#previewContainer').html($("#canvas").hotArea('toTag'))});
-		$('#canvas').hotArea('bindChangeEvent', function (event, data) {
-			console.log(data.areas);
+		$("img").on("load", function() {
+			$("#canvas")
+				.hotArea({initAreas: initAreas})
+				.hotArea('bindChangeEvent', function (event, data) {
+					console.log(data.areas);
+				});
 		});
+		$('#preview').click(function () {$('#previewContainer').html($("#canvas").hotArea('toTag'))});
 	});
 </script>
