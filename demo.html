@@ -16,9 +16,9 @@
 		<button id="preview">Preview</button>
 		<h4 style="color:red;">double click to delete an hot area</h4>
 	</header>
-	<div style="width: 1600px;">
+	<div style="min-width: 1600px;">
 		<div id="canvas" class="left">
-			<img src="img/bathroom.png">
+			<img src="img/pic.jpg">
 		</div>
 		<div id="previewContainer" class="right"></div>
 	</div>
@@ -28,8 +28,15 @@
 <script src="lib/jquery-1.9.1.js"></script>
 <script src="lib/jquery.hotArea.js"></script>
 <script>
+	var initAreas = [
+		{"x":0,"y":380,"width":183,"height":99,"url":"//so.com"},
+		{"x":189,"y":381,"width":181,"height":94,"url":"//baidu.com"},
+		{"x":434,"y":125,"width":101,"height":104,"url":"//google.com"},
+		{"x":561,"y":379,"width":183,"height":97,"url":"//sina.com"},
+		{"x":17,"y":493,"width":350,"height":394,"url":"//m.51tiangou.com"},
+		{"x":377,"y":495,"width":351,"height":396,"url":"//taobao.com"}];
 	$(function () {
-		$("img").on("load", function() {$("#canvas").hotArea();});
+		$("img").on("load", function() {$("#canvas").hotArea({initAreas: initAreas});});
 		$('#preview').click(function () {$('#previewContainer').html($("#canvas").hotArea('toTag'))});
 	});
 </script>
