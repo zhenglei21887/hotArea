@@ -38,5 +38,8 @@
 	$(function () {
 		$("img").on("load", function() {$("#canvas").hotArea({initAreas: initAreas});});
 		$('#preview').click(function () {$('#previewContainer').html($("#canvas").hotArea('toTag'))});
+		$('#canvas').hotArea('bindChangeEvent', function (event, data) {
+			console.log(data.areas);
+		});
 	});
 </script>
